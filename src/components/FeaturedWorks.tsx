@@ -60,7 +60,8 @@ export default function FeaturedWorks() {
             role: "Project Manager/Leader, Hardware Engineer",
             desc: (
                 <>
-                    使用硬體槍枝以及Unity開發、互動。<br />以俄羅斯輪盤為基底玩法，配合「普通」、「中毒」、「回復」等多種子彈種類構成之雙人互動遊戲。<br />
+                    使用Arduino硬體槍枝以及Unity開發、互動。<br />
+                    俄羅斯輪盤為基底玩法，配合「普通」、「中毒」、「回復」等多種子彈種類構成多種不同策略之雙人互動遊戲。<br />
                     可旋轉彈匣打亂順序、也可基於目前子彈狀態推測未來。<br />
                     主要製作內容：專案主導、硬體開發
                 </>
@@ -111,7 +112,7 @@ export default function FeaturedWorks() {
         },
         {
             id: 6,
-            title: "互動程式設計課程教材協助",
+            title: "程式設計入門課程教材協助",
             role: "NTUT XRLab - Documentation Author, Demo Project Developer",
             desc: (
                 <>
@@ -124,7 +125,7 @@ export default function FeaturedWorks() {
             img: MIDICover.src,
             relatedLinks: [
                 { icon: YouTubeIcon, name: "Demo影片", hoverColor: "group-hover/btn:bg-red-500", url: "https://www.youtube.com/watch?v=xe0fl6z8tOU" },
-                { icon: GitHubIcon, name: "Repository", hoverColor: "group-hover/btn:bg-grey-500", url: "" },
+                { icon: GitHubIcon, name: "Repository", hoverColor: "group-hover/btn:bg-grey-500", url: "https://github.com/misosir00177/MIDI_Example_URP_Designant" },
                 { icon: NotionIcon, name: "教材文檔", hoverColor: "group-hover/btn:bg-white-500", url: "https://www.notion.so/misosir00177/Unity-MIDI-Input-System-MINIS-Unity-MIDI-fb8a5004d5c6424e8b014da0e8be9c16?source=copy_link" },
                 { icon: detailIcon, name: "Detail", btnColor: "bg-[#8BC24A]", textColor: "text-black", hoverColor: "group-hover/btn:bg-neutral-300", url: "#ColorPancake" }
             ]
