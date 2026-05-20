@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import MobiusCover from "../../public/img/Mobius/Cover.png";
 import IxdHeroCover from "../../public/img/IxDHero/Cover.png";
-import RevolverCover from "../../public/img/RevolveR/Cover.png";
+import RevolverCover from "../../public/img/Revolver/Cover.png";
 import ColorPancakeCover from "../../public/img/ColorPancake/Cover.png";
 import DrKiwiCover from "../../public/img/DrKiwi/Cover.png";
 import MIDICover from "../../public/img/MIDI_Doc/Cover.png";
