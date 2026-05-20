@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import mobiusImg from "../../public/img/Mobius/MobiusCover.jpg";
+import mobiusImg from "../../public/img/Mobius/Cover.png";
 
 export default function Hero() {
   const slides = [

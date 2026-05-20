@@ -54,11 +54,12 @@ export default function About() {
             因為「彦」字是日文常用漢字，常被系統顯示成問號，<br />
             所以朋友們也常叫我「魏直問號」。<br />
             我很喜歡這個綽號，象徵著好奇心與追求答案的精神。<br />
-            我樂於幫助他人解決問題，無論是軟硬體專案、課堂或行政事務，<br />
-            因此有幸於<HighlightText>系上與國際專班合作之展覽擔任總召職位</HighlightText>。
-            我也經常在系上課堂專案中擔任專案領導、軟硬體工程師的角色，<br />
-            曾經帶領團隊奪得系上專案競賽的冠軍。<br />
-            而後也經過師長認可，獲得加入<HighlightText>NTUT XRLab</HighlightText>的機會協助研究生學長姐的專案開發<br />
+            我樂於幫助他人解決問題，無論是軟硬體專案、課堂或行政事務。<br />
+            我擅長<HighlightText>用多語言的溝通、策畫領導能力</HighlightText>，使他人從「疑問」變為感到「驚嘆」，<br />
+            因此有幸於<HighlightText>系上與國際專班合作之展覽擔任總召職位</HighlightText>。<br />
+            我也經常在系上課堂專案、實驗室項目中擔任專案領導、軟硬體工程師的角色，<br />
+            曾經帶領團隊製作「學分勇者」<br />奪得由北科大互動設計系、清華大學藝術學院科技藝術所、不或娛樂組成之<br />評審團合頒 - <HighlightText>最佳作品獎(Best-In-Show)</HighlightText>。<br />
+            也經過師長認可，獲得加入<HighlightText>NTUT XRLab</HighlightText>的機會，協助研究生學長姐的專案開發。<br />
             我相信自己能<HighlightText>把人們的「問號」轉變成「驚嘆號」</HighlightText>，也希望自己能在適合的環境下發揮這樣的特質，帶來價值與驚喜。
         </p>
         
