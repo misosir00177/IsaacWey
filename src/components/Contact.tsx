@@ -5,7 +5,12 @@ export default function Contact() {
       <h1 className="text-6xl md:text-9xl font-bold uppercase tracking-tighter leading-none mb-12">
         Let's <br /> Make <br /> <span className="text-[#8BC24A]">Action</span>
       </h1>
-      <p className="text-neutral-400 text-xl md:text-2xl mb-12">A</p>
+      <p className="text-neutral-400 text-xl md:text-2xl mb-12">
+        GitHub - <a href="https://github.com/misosir00177/IsaacWey" className="hover:text-[#8BC24A] transition-colors">misosir00177</a><br />
+        Email - <a href="mailto:misosir00177@gmail.com" className="hover:text-[#8BC24A] transition-colors">misosir00177@gmail.com</a><br />
+        LINE - @misosir.00177<br />
+        Phone +886 0900 753 107
+      </p>
       <a href="mailto:misosir00177@gmail.com" className="px-10 py-5 bg-white text-black text-lg font-bold uppercase tracking-widest rounded-full hover:scale-105 transition-transform">
         Mail
       </a>

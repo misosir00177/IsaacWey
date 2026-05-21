@@ -3,13 +3,20 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import mobiusImg from "../../public/img/Mobius/Cover.png";
+import Cover1 from "../../public/img/_Headlines/1.jpg";
+import Cover2 from "../../public/img/_Headlines/2.png";
+import Cover3 from "../../public/img/_Headlines/3.png";
+import Cover4 from "../../public/img/_Headlines/4.png";
+import Cover5 from "../../public/img/_Headlines/5.png";
+
 
 export default function Hero() {
   const slides = [
-    { id: 1, text: "[ Hero Image / Video 1 ]" , image: mobiusImg.src },
-    { id: 2, text: "[ Hero Image / Video 2 ]" , image: "" },
-    { id: 3, text: "[ Hero Image / Video 3 ]" , image: "" }
+    { id: 1, text: "[ Hero Image / Video 1 ]" , image: Cover1.src },
+    { id: 2, text: "[ Hero Image / Video 2 ]" , image: Cover2.src },
+    { id: 3, text: "[ Hero Image / Video 3 ]" , image: Cover3.src },
+    { id: 4, text: "[ Hero Image / Video 4 ]" , image: Cover4.src },
+    { id: 5, text: "[ Hero Image / Video 5 ]" , image: Cover5.src }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

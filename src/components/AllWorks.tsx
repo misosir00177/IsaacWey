@@ -14,6 +14,13 @@ import RevolverCover from "../../public/img/Revolver/Cover.png";
 import ColorPancakeCover from "../../public/img/ColorPancake/Cover.png";
 import DrKiwiCover from "../../public/img/DrKiwi/Cover.png";
 import MIDICover from "../../public/img/MIDI_Doc/Cover.png";
+import MatchaCover from "../../public/img/Matcha/Cover.png";
+import IxDHero2ndCover from "../../public/img/IxDHero2nd/Cover.png";
+import PeelusionCover from "../../public/img/PeeLusion/Cover.png";
+import CalculatedSmashCover from "../../public/img/CalculatedSmash/Cover.png";
+import postCover from "../../public/img/Video/Post_Cover.png";
+import AECover from "../../public/img/Video/AE_Cover.png";
+
 
 type ProjectMedia = {
   type: 'image' | 'youtube';
@@ -337,7 +344,7 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           由於初次接觸前端開發，以HTML/CSS/JavaScript之基本技術為主要學習目標，並學習如何製作響應式(RWD)網頁。<br />
         </>,
-        media: [{ type: 'image', url: '/img/MetaCardDuel/MetaCardDuel.jpg' }],
+        media: [{ type: 'image', url: MatchaCover.src }],
         links: [
           createProjectLink('Demo網站', 'https://misosir00177.github.io/MatchaResponsiveWeb/index.html'),
           createProjectLink('Repository', 'https://github.com/misosir00177/MatchaResponsiveWeb')
@@ -405,14 +412,15 @@ export default function AllWorks() {
           <br />
           <span className="text-[#8BC24A]">學習機會</span><br />
           硬體上紅外線遮罩偵測會因環境因素影響，導致排錯困難。因此學習到紅外線閥值等相關知識與其他偵測方法。<br />
-        </>
+        </>,
+        media: [{ type: 'image', url: IxDHero2ndCover.src }],
       },
       {
         id: "h2", internalId: "Revolver",
         title: "RevolveR",
         brief: "實體槍枝配合Unity人臉捕捉技術之遊戲專案。以俄羅斯輪盤為基底玩法，配合「普通」、「中毒」、「回復」等多種子彈種類構成多種不同策略之雙人互動遊戲。",
         role: "Project Manager/Leader, Hardware Engineer",
-        tags: ["Unity", "ESP32", "REST API", "Node.js","IOT","Bluetooth"],
+        tags: ["Unity", "ESP32", "REST API", "Node.js", "IOT", "Bluetooth"],
         media: [{ type: 'image', url: RevolverCover.src }],
         detail: <>
           以俄羅斯輪盤為發想基底，配合「普通」、「中毒」、「回復」等多元化的子彈，以及可選擇欲開槍之對象(自己或對方)，實現賭博、運氣、策略合而為一之雙人互動遊戲。<br />
@@ -441,78 +449,152 @@ export default function AllWorks() {
       {
         id: "h3", internalId: "PeeLusion",
         title: "PeeLusion",
-        brief: "A",
-        role: "Unity程式設計師",
+        brief: "以體驗吸食毒品以及其後遺症為主題之MR互動體驗。除了以Unity之MR互動體驗內容之外，結合硬體裝置體驗吸毒後遺症之一：尿失禁，以Raspberry Pi控制水閥開關來止、放溫水。",
+        role: "Project Manager/Leader, Hardware Engineer",
         tags: ["Unity", "Raspberry Pi", "REST API", "Node.js"],
-        detail: "A"
+        detail: <>
+          以MR虛擬混合現實的方式體驗吸食毒品，並結合利用Raspberry Pi與REST API控制之硬體來體驗尿失禁。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          從專案規劃、所有硬體內容設計、REST API設計。<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          穿戴上MR裝置並利用手把模擬吸食毒品的動作來體驗吸食毒品的過程，並在體驗過程中會有隨機事件觸發來模擬吸食毒品後可能發生的情況。<br />
+          達到特定劑量後會觸發尿失禁事件，此時Raspberry Pi控制的水閥會放出溫水來模擬尿失禁的情況。<br />
+          <br />
+          <span className="text-[#8BC24A]">專案最大特點</span><br />
+          利用MR以及有溫度、有顏色的水來模擬吸食毒品、以及其後遺症，嘗試針對防毒教育做出全新的體會方式。<br />
+          <br />
+          <span className="text-[#8BC24A]">學習機會</span><br />
+          Unity系統中控制REST API的訊號不穩定，導致有機會無法在體驗最高潮的點觸發相應效果，學習到應更加以注重連線品質與速度，因此開始學習Web Socket。<br />
+        </>,
+        media: [{ type: 'image', url: PeelusionCover.src }],
       },
       {
-        id: "h4", internalId: "Dr.Kiwi",
+        id: "h4", internalId: "DrKiwi",
         title: "Dr.Kiwi",
-        brief: "A",
-        role: "Unity程式設計師",
-        tags: ["Unity", "C#", "WebSocket", "Node.js"],
+        brief: "以Unity製作之混合實境(MR)遊戲，玩家化作水果攤老闆，透過不同手勢打擊各式各樣被感染的水果。",
+        role: "Project Manager/Leader, MR Developer",
+        tags: ["Unity", "C#", "MR"],
         media: [{ type: 'image', url: DrKiwiCover.src }],
-        detail: "A"
+        detail: <>
+          以Unity製作之混合實境(MR)遊戲，玩家化作水果攤老闆，透過不同手勢打擊各式各樣被感染的水果。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          專案規劃、Unity MR程式設計<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          任一單手比出食指與中指(YA的手勢)可進入「慢速領域」，此時除了玩家以為所有感染水果、投擲物品等皆會以慢速動作。<br />
+          此時可以以雙手來擺出符號對應之特定手勢(尖刀、石頭、布)來針對感染水果攻擊。<br />
+          打倒最終魔王：榴槤而贏得遊戲。<br />
+          <br />
+          <span className="text-[#8BC24A]">專案最大特點</span><br />
+          利用MR來在平常的空間內看見虛擬水果敵人，而有虛實交錯的遊玩體驗。並且配合QTE以及手勢遊玩的機制來創造全新的遊戲體驗。<br />
+          <br />
+          <span className="text-[#8BC24A]">學習機會</span><br />
+          MR的開發上尚不熟悉，因此此遊戲之流程上沒有預想中刺激，規則上有眾多部分可以改善，因此學到需要製作簡易Demo版本驗證遊戲的趣味性。<br />
+        </>,
+        links: [
+          createProjectLink('Repository', 'https://github.com/misosir00177/DrKiwi_TheOwnerOfFruitStand'),
+          createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=UoV-7OCeAl4&feature=youtu.be')
+        ]
       }
     ],
     "Vibe Coding": [
       {
         id: "v1", internalId: "ColorPancake",
         title: "Color Pancake",
-        brief: "A",
-        role: "Unity程式設計師",
+        brief: "以老人復健為主題配合斯特魯普效應，使用者透過畫面出題之文字顏色(而非背景顏色)踩對應位置發光地墊。",
+        role: "Project Manager/Leader, Backend Developer",
         tags: ["HTML", "CSS", "JavaScript", "Firebase", "Google AI Studio"],
-        detail: "A",
+        detail: <>
+          以老人復健為主題，並從利用聯網地墊支互動做發想。<br />
+          利用了斯特魯普效應(字義對字體顏色的干擾效應)來訓練腦力、肌力、反應力。<br />
+          本專案專注於後端串接，因此前端測試專用介面由AI輔助生成。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          專案規劃、後端設計與Firebase串接、模擬介面開發<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          分為三大部分：出題端、地墊顏色模擬、地墊作答端<br />
+          出題端以會出現字義與字體顏色互相干擾之字詞，使用者需判斷文字的顏色(而非字義)來踩對應位置顏色的地墊。<br />
+          由於地墊支顏色控制不穩定，因此開發了地墊顏色模擬介面來提供使用者反饋。<br />
+          <br />
+          <span className="text-[#8BC24A]">專案最大特點</span><br />
+          利用斯特魯普效應配合地墊聯網而同時訓練反應力、腦力、肌力。<br />
+          <br />
+        </>,
         media: [{ type: 'image', url: ColorPancakeCover.src }],
         links: [
-          createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=7nqj8jYlXoE'),
+          //createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=7nqj8jYlXoE'),
           createProjectLink('Repository', 'https://github.com/misosir00177/ColorPancakeMatSide')
         ]
       },
       {
         id: "v2", internalId: "CalculatedSmash",
         title: "心算羽球王",
-        brief: "A",
-        role: "Unity程式設計師",
-        tags: ["HTML", "CSS", "JavaScript"],
-        detail: "A"
+        brief: "針對高齡年長者設計的心算訓練遊戲，玩家需在即時打擊球或於限定時間內解出數學題目來擊打對手，並以此來訓練反應力、腦力。",
+        role: "Project Manager/Leader, Frontend Developer",
+        tags: ["Prompt Engineering", "HTML", "CSS", "JavaScript", "Three.js", "Google AI Studio"],
+        detail: <>
+          以高齡友善為主題，並從羽球運動中的殺球需要反應力，來連想到具有解題時限之簡易心算亦可同時訓練腦力與反應力。<br />
+          本專案由於需針對高齡者友善，也同時考慮到其他年齡層(孩童)等也會是未來客群，因此設計了高度可自訂之參數來讓使用者可以調整遊戲難度、遊戲節奏等，以適應不同年齡層的使用者。<br />
+          本專案專注於計畫實現，因此整體遊戲由AI輔助生成。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          專案規劃、Prompt Engineering、細節程式修改<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          使用者會與CPU(電腦)為對手來進行與球對戰。<br />
+          在球即將接近時會有著球點的提示，需要透過空白鍵或滑鼠點擊做出反應來打擊球。<br />
+          若太快或太慢反應會進入「救球」，可以在限定時間內解出數學題目來反擊。<br />
+          連續擊球達到指定次數可進入「殺球」，透過計算更複雜的題目而打出強力的一球來增加得分機率。<br />
+          <br />
+          <span className="text-[#8BC24A]">專案最大特點</span><br />
+          利用熟悉的運動(羽球)規則配合虛擬中才能聯合的概念(心算)而同時訓練反應力與腦力。<br />
+          <br />
+          </>,
+        media: [{ type: 'image', url: CalculatedSmashCover.src }],
+        links: [
+          createProjectLink('Demo體驗', 'https://ai.studio/apps/2fa97959-e525-4a42-af8d-d11b5ec71f3c')
+        ]
       },
     ],
     "Video Project": [
       {
-        id: "v1", internalId: "ColorPancake",
-        title: "Color Pancake",
-        brief: "A",
-        role: "Unity程式設計師",
-        tags: ["HTML", "CSS", "JavaScript", "Firebase", "Google AI Studio"],
-        detail: "A",
-        media: [{ type: 'image', url: ColorPancakeCover.src }],
+        id: "v1", internalId: "Post",
+        title: "行動郵局APP影音創作暨AI行銷科技競賽投稿作品",
+        brief: "行動郵局APP影音創作暨AI行銷科技競賽投稿作品",
+        role: "故事板構想, 剪輯, 攝影",
+        tags: ["Premiere Pro", "Shorts", "競賽投稿"],
+        detail: "參加行動郵局APP影音創作暨AI行銷科技競賽之投稿作品，使用Premiere Pro剪輯，並以YouTube Shorts形式發佈於YouTube平台。",
+        media: [{
+          type: 'image', url: postCover.src
+        },
+        {
+          type: 'youtube', url: 'MG6CxC-Klgs'
+        }],
         links: [
-          createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=7nqj8jYlXoE'),
-          createProjectLink('Repository', 'https://github.com/misosir00177/ColorPancakeMatSide')
+          createProjectLink('影片', 'https://youtube.com/shorts/MG6CxC-Klgs'),
         ]
       },
       {
-        id: "v2", internalId: "CalculatedSmash",
-        title: "心算羽球王",
-        brief: "A",
-        role: "Unity程式設計師",
-        tags: ["HTML", "CSS", "JavaScript"],
-        detail: "A"
+        id: "v2", internalId: "AE",
+        title: "world.execute(me);",
+        brief: "使用After Effects與Aviutl製作之簡易動態影像作品。",
+        role: "剪輯",
+        tags: ["After Effects", "Aviutl", "Motion Graphics"],
+        detail: "興趣性質的簡易動態影像作品，使用After Effects與Aviutl製作。",
+        media: [{
+          type: 'image', url: AECover.src
+        },
+        {
+          type: 'youtube', url: 'LX9xbQnZLLU'
+        }],
+        links: [
+          createProjectLink('影片', 'https://www.youtube.com/watch?v=LX9xbQnZLLU'),
+        ]
       },
-    ],
-    "Award/Certificate/Other": [
-      {
-        id: "o1", internalId: "toeic",
-        title: "TOEIC",
-        brief: "英文能力證明",
-        role: "TOEIC 760",
-        tags: ["English", "TOEIC"],
-        detail: "A",
-        media: [{ type: 'image', url: ColorPancakeCover.src }],
-      }
-
     ]
   };
 

@@ -127,7 +127,7 @@ export default function FeaturedWorks() {
                 { icon: YouTubeIcon, name: "Demo影片", hoverColor: "group-hover/btn:bg-red-500", url: "https://www.youtube.com/watch?v=xe0fl6z8tOU" },
                 { icon: GitHubIcon, name: "Repository", hoverColor: "group-hover/btn:bg-grey-500", url: "https://github.com/misosir00177/MIDI_Example_URP_Designant" },
                 { icon: NotionIcon, name: "教材文檔", hoverColor: "group-hover/btn:bg-white-500", url: "https://www.notion.so/misosir00177/Unity-MIDI-Input-System-MINIS-Unity-MIDI-fb8a5004d5c6424e8b014da0e8be9c16?source=copy_link" },
-                { icon: detailIcon, name: "Detail", btnColor: "bg-[#8BC24A]", textColor: "text-black", hoverColor: "group-hover/btn:bg-neutral-300", url: "#ColorPancake" }
+                { icon: detailIcon, name: "Detail", btnColor: "bg-[#8BC24A]", textColor: "text-black", hoverColor: "group-hover/btn:bg-neutral-300", url: "#MIDI" }
             ]
         }
     ];
