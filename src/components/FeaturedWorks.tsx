@@ -134,7 +134,7 @@ export default function FeaturedWorks() {
 
     return (
         <div className="py-20 relative bg-neutral-950">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-20 px-6 text-neutral-300">
+            <h2 id="featured" className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-20 px-6 text-neutral-300">
                 Featured Works /
             </h2>
             <div className="flex flex-col">

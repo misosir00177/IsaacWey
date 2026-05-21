@@ -270,7 +270,9 @@ export default function AllWorks() {
         detail: <>北科大XRLab與Mobius 莫比斯圓環創作公社合作之互動演出專案。<br />
           實際於2025/10/5在牯嶺街小劇場演出。<br />
           整體專案以Unity開發，包含MR、MIDI控制器串接、毫米波串接等開發內容，由數位程式設計師共同維護、開發，<br />
-          本人主要負責MIDI控制系統開發，包含與MIDI裝置通訊、參數調整、數值監控等。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          MIDI控制系統開發，包含與MIDI裝置通訊、參數調整、數值監控等。<br />
           也需要配合前台表演者的VR裝置狀態與表演內容調整MIDI控制系統的邏輯與參數，以確保整體演出流程順暢且互動效果達到預期。<br />
           <br />
           <span className="text-[#8BC24A]">專案最大特點</span><br />
@@ -291,9 +293,12 @@ export default function AllWorks() {
         brief: "互動程式設計課程之「MIDI控制器」部分教材開發、製作",
         tags: ["Unity", "C#", "MIDI Controller", "Notion", "教材"],
         detail: <>針對北科大XRLab於113級互動設計系之程式設計入門課程教材 - MIDI控制器部分之開發與文檔撰寫。<br />
+          專案本身為互動式音樂MV，透過使用者在特定時機操控MIDI控制器，可獲得多種不同視覺效果。<br />
           整體專案以Unity開發、教學文檔以Notion製作。<br />
-          主要撰寫、開發、協助內容為MIDI控制器串接、鏡頭使用、Timeline使用、Animation使用、VFX使用等。<br />
-          專案本身為互動式音樂MV，透過使用者在特定時機操控MIDI，可獲得多種不同視覺效果。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          撰寫、開發、協助MIDI控制器串接、鏡頭使用、Timeline使用、Animation使用、VFX使用等。<br />
+          撰寫關於開發、串接MIDI之文檔。<br />
           <br />
           <span className="text-[#8BC24A]">專案最大特點</span><br />
           除了需要展現MIDI控制器的多樣性與功能性介紹外， 同時須將Unity基本功能融合、納入教材。<br />
@@ -318,6 +323,13 @@ export default function AllWorks() {
         tags: ["HTML", "CSS", "Java Script"],
         detail: <>以抹茶為主要視覺元素以及載體的個人生產力提升網站Demo。<br />
           包含代辦清單、花費記錄、日誌等功能模組之Demo，並以抹茶相關的元素作為整體設計主軸。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          從專案規劃、設計、前端開發到部署的全流程管理與執行。<br />
+          包含專案的功能規劃、設計師於Figma設計之視覺設計的實現、前端開發、測試、部署等全流程工作。<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          以網頁形式呈現，使用者可點擊進入各個功能模組的Demo頁面，體驗相關功能的使用方式與效果。<br />
           <br />
           <span className="text-[#8BC24A]">專案最大特點</span><br />
           完全以純手工的方式開發HTML、CSS、JavaScript等前端技術。<br />
@@ -347,78 +359,126 @@ export default function AllWorks() {
             國立臺北科技大學互動設計系, 國立清華大學藝術學院科技藝術所, 不或娛樂評審團合頒
           </span><br />
           <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          從專案規劃、遊戲設計、美術素材使用與導入、軟體程式開發到部署的全流程管理與執行。<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          以滑鼠點擊方式打擊「魔化老師」與「專題大魔王」，其中需要區別正常老師與魔化老師。<br />
+          每次成功打擊會獲得分數、打擊失誤(打到正常版本的老師)會導致學分減少。<br />
+          擊敗大魔王贏得遊戲，或學分歸零而輸掉遊戲...。<br />
+          <br />
           <span className="text-[#8BC24A]">專案最大特點</span><br />
           針對目標客群的高度共鳴以及整體遊戲流暢度、競爭性。<br />
           <br />
           <span className="text-[#8BC24A]">學習機會</span><br />
           針對競爭性元素，使用者有高度參與，因此排行榜、快速進入遊玩等為加分要素。<br />
         </>,
-    media: [{ type: 'image', url: IxdHeroCover.src }],
-      links: [
-        createProjectLink('Repository', 'https://github.com/misosir00177/IxDHero/tree/master'),
-        createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=xe0fl6z8tOU')
-      ]
-}
+        media: [{ type: 'image', url: IxdHeroCover.src }],
+        links: [
+          createProjectLink('Repository', 'https://github.com/misosir00177/IxDHero/tree/master'),
+          createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=xe0fl6z8tOU')
+        ]
+      }
     ],
-"Interactive / Hardware": [
-  {
-    id: "h1", internalId: "IxDHero2",
-    title: "IxD Hero -Cost of 2nd Year-",
-    brief: "學分勇者之二週年紀念專案，結合Arduino、Unity等技術的實體互動裝置",
-    role: "Project Manager/Leader, Game Developer, Hardware Engineer",
-    tags: ["Arduino", "Unity", "C#", "C++", "Accelerometer", "LED Strip", "IR Sensor"],
-    detail: "A"
-  },
-  {
-    id: "h2", internalId: "Revolver",
-    title: "RevolveR",
-    brief: "A",
-    role: "Unity程式設計師",
-    tags: ["Unity", "ESP32", "REST API", "Node.js"],
-    media: [{ type: 'image', url: RevolverCover.src }],
-    detail: "A"
-  },
-  {
-    id: "h3", internalId: "PeeLusion",
-    title: "PeeLusion",
-    brief: "A",
-    role: "Unity程式設計師",
-    tags: ["Unity", "Raspberry Pi", "REST API", "Node.js"],
-    detail: "A"
-  },
-  {
-    id: "h4", internalId: "Dr.Kiwi",
-    title: "Dr.Kiwi",
-    brief: "A",
-    role: "Unity程式設計師",
-    tags: ["Unity", "C#", "WebSocket", "Node.js"],
-    media: [{ type: 'image', url: DrKiwiCover.src }],
-    detail: "A"
-  }
-],
-  "Vibe Coding": [
-    {
-      id: "v1", internalId: "ColorPancake",
-      title: "Color Pancake",
-      brief: "A",
-      role: "Unity程式設計師",
-      tags: ["HTML", "CSS", "JavaScript", "Firebase", "Google AI Studio"],
-      detail: "A",
-      media: [{ type: 'image', url: ColorPancakeCover.src }],
-      links: [
-        createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=7nqj8jYlXoE'),
-        createProjectLink('Repository', 'https://github.com/misosir00177/ColorPancakeMatSide')
-      ]
-    },
-    {
-      id: "v2", internalId: "CalculatedSmash",
-      title: "心算羽球王",
-      brief: "A",
-      role: "Unity程式設計師",
-      tags: ["HTML", "CSS", "JavaScript"],
-      detail: "A"
-    },
-  ],
+    "Interactive / Hardware": [
+      {
+        id: "h1", internalId: "IxDHero2",
+        title: "IxD Hero -Cost of 2nd Year-",
+        brief: "學分勇者之續作專案，揮舞互動勇者之劍打擊「魔化」老師的攻擊，拯救互動系！本次結合Arduino偵測加速度、紅外線遮罩偵測之等技術，製作實體「互動勇者之劍」互動裝置。",
+        role: "Project Manager/Leader, Game Developer, Hardware Engineer",
+        tags: ["Arduino", "Unity", "C#", "C++", "Accelerometer", "LED Strip", "IR Sensor"],
+        detail: <>學分勇者之續作專案，配合節奏揮舞實體的「互動勇者之劍」打擊「魔化」老師的攻擊，拯救互動系！<br />
+          本次除了以Unity之2D方式呈現視覺，結合先前「應援棒」之硬體專案內容，製作實體「互動勇者之劍」互動裝置。<br />
+          主要以MPU6050 六軸運動感測器偵測加速度、以藍芽方式傳訊息至Unity，並結合LED Strip做視覺反饋。
+          額外使用IR 紅外線遮罩偵測技術檢測玩家是否蹲下。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          從專案規劃、遊戲設計、美術素材使用與導入、軟硬體程式開發到部署的全流程管理與執行。<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          基底為音樂遊戲，因此需要配合音樂節奏遊玩。主要透過揮動硬體裝置「互動勇者之劍」或蹲下躲過物件來遊玩。<br />
+          「魔化老師」會丟擲特定物件(拳套、沙包)：當拳套與判定線重疊時揮舞「互動勇者之劍」可以打擊出去並造成攻擊；沙包需透過蹲下來躲過攻擊。<br />
+          遊玩指定關卡數贏得遊戲。<br />
+          <br />
+          <span className="text-[#8BC24A]">專案最大特點</span><br />
+          高度運動程度與互動性，以及無線實體裝置所提供之新穎遊玩體驗。<br />
+          <br />
+          <span className="text-[#8BC24A]">學習機會</span><br />
+          硬體上紅外線遮罩偵測會因環境因素影響，導致排錯困難。因此學習到紅外線閥值等相關知識與其他偵測方法。<br />
+        </>
+      },
+      {
+        id: "h2", internalId: "Revolver",
+        title: "RevolveR",
+        brief: "實體槍枝配合Unity人臉捕捉技術之遊戲專案。以俄羅斯輪盤為基底玩法，配合「普通」、「中毒」、「回復」等多種子彈種類構成多種不同策略之雙人互動遊戲。",
+        role: "Project Manager/Leader, Hardware Engineer",
+        tags: ["Unity", "ESP32", "REST API", "Node.js","IOT","Bluetooth"],
+        media: [{ type: 'image', url: RevolverCover.src }],
+        detail: <>
+          以俄羅斯輪盤為發想基底，配合「普通」、「中毒」、「回復」等多元化的子彈，以及可選擇欲開槍之對象(自己或對方)，實現賭博、運氣、策略合而為一之雙人互動遊戲。<br />
+          以實體硬體槍枝實現模擬旋轉左輪槍隻彈匣的俄羅斯輪盤玩法，配合臉部捕捉技術，使子彈特效會遺留在玩家身上。<br />
+          技術上偵測加速度來判斷槍枝的甩動、透過在彈匣安裝磁鐵而感應磁力判斷彈匣是否被旋轉、IR 紅外線定位來判斷槍口位置、於各種類子彈安裝NFC貼片並在槍枝側邊安裝NFC感應來判斷裝填之子彈種類。<br />
+          實際使用ESP32開發，將MPU6050 六軸運動感測器偵測之加速度、霍爾磁力感測元件偵測之磁力資訊、IR定位資訊配合藍芽傳訊息至Unity。為節省藍芽溝通訊息，NFC刷得之子彈種類以REST API方式與遊戲端是伺服器做通訊。<br />
+          <br />
+          <span className="text-[#8BC24A]">負責項目</span><br />
+          從專案規劃、所有硬體內容設計。<br />
+          <br />
+          <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
+          當兩位玩家就位後，即可開始遊玩。<br />
+          1. 透過輪流旋轉槍枝決定開槍與填彈順序<br />
+          2. 各玩家從「普通」、「中毒」、「回復」等子彈中挑選並輪流裝填<br />
+          3. 每一新回合可選擇是否轉動彈匣來打亂子彈順序。<br />
+          4. 選擇開槍對象並扣下板機，觀察效果來預測未來可能發生的事。<br />
+          循環以上步驟直到有玩家血量歸零。<br />
+          <br />
+          <span className="text-[#8BC24A]">專案最大特點</span><br />
+          高度互動性、及時之互動反饋，以及無線實體槍枝裝置與俄羅斯輪盤玩法所提供之新穎遊玩體驗。<br />
+          <br />
+          <span className="text-[#8BC24A]">學習機會</span><br />
+          硬體上太多元件額造成電量時常不足，並且IR 紅外線定位技術也不成熟，導致遊戲體驗受到影響，因此學習到電路規劃以及技術使用需要重新審視。<br />
+        </>
+      },
+      {
+        id: "h3", internalId: "PeeLusion",
+        title: "PeeLusion",
+        brief: "A",
+        role: "Unity程式設計師",
+        tags: ["Unity", "Raspberry Pi", "REST API", "Node.js"],
+        detail: "A"
+      },
+      {
+        id: "h4", internalId: "Dr.Kiwi",
+        title: "Dr.Kiwi",
+        brief: "A",
+        role: "Unity程式設計師",
+        tags: ["Unity", "C#", "WebSocket", "Node.js"],
+        media: [{ type: 'image', url: DrKiwiCover.src }],
+        detail: "A"
+      }
+    ],
+    "Vibe Coding": [
+      {
+        id: "v1", internalId: "ColorPancake",
+        title: "Color Pancake",
+        brief: "A",
+        role: "Unity程式設計師",
+        tags: ["HTML", "CSS", "JavaScript", "Firebase", "Google AI Studio"],
+        detail: "A",
+        media: [{ type: 'image', url: ColorPancakeCover.src }],
+        links: [
+          createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=7nqj8jYlXoE'),
+          createProjectLink('Repository', 'https://github.com/misosir00177/ColorPancakeMatSide')
+        ]
+      },
+      {
+        id: "v2", internalId: "CalculatedSmash",
+        title: "心算羽球王",
+        brief: "A",
+        role: "Unity程式設計師",
+        tags: ["HTML", "CSS", "JavaScript"],
+        detail: "A"
+      },
+    ],
     "Video Project": [
       {
         id: "v1", internalId: "ColorPancake",
@@ -442,95 +502,95 @@ export default function AllWorks() {
         detail: "A"
       },
     ],
-      "Award/Certificate/Other": [
-        {
-          id: "o1", internalId: "toeic",
-          title: "TOEIC",
-          brief: "英文能力證明",
-          role: "TOEIC 760",
-          tags: ["English", "TOEIC"],
-          detail: "A",
-          media: [{ type: 'image', url: ColorPancakeCover.src }],
-        }
+    "Award/Certificate/Other": [
+      {
+        id: "o1", internalId: "toeic",
+        title: "TOEIC",
+        brief: "英文能力證明",
+        role: "TOEIC 760",
+        tags: ["English", "TOEIC"],
+        detail: "A",
+        media: [{ type: 'image', url: ColorPancakeCover.src }],
+      }
 
-      ]
+    ]
   };
 
-const [selected, setSelected] = useState<Project | null>(null);
+  const [selected, setSelected] = useState<Project | null>(null);
 
-useEffect(() => {
-  if (selected) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
-  return () => { document.body.style.overflow = "" };
-}, [selected]);
+  useEffect(() => {
+    if (selected) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = "" };
+  }, [selected]);
 
-return (
-  <div className="py-20 px-6 md:px-20 border-t border-neutral-800">
-    <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-20 text-neutral-300">
-      All Works / Gallery
-    </h2>
+  return (
+    <div className="py-20 px-6 md:px-20 border-t border-neutral-800">
+      <h2 id="gallery" className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-20 text-neutral-300">
+        All Works / Gallery
+      </h2>
 
-    <div className="flex flex-col gap-20">
-      {Object.entries(galleryData).map(([section, items]) => (
-        <div key={section}>
-          <h3 className="text-xl text-neutral-500 uppercase tracking-widest mb-10 border-b border-neutral-800 pb-4">
-            {section}
-          </h3>
+      <div className="flex flex-col gap-20">
+        {Object.entries(galleryData).map(([section, items]) => (
+          <div key={section}>
+            <h3 className="text-xl text-neutral-500 uppercase tracking-widest mb-10 border-b border-neutral-800 pb-4">
+              {section}
+            </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {items.map(item => (
-              <motion.div
-                key={item.id}
-                id={item.internalId}
-                whileHover={{ y: -10 }}
-                onClick={() => setSelected(item)}
-                className="p-6 md:p-8 bg-neutral-900 border border-neutral-800 rounded-3xl cursor-pointer hover:bg-neutral-800 transition-colors flex flex-col group relative overflow-hidden"
-              >
-                {/* Card Cover Image */}
-                {item.media && item.media.length > 0 && (
-                  <div className="w-full h-48 mb-6 overflow-hidden rounded-2xl bg-neutral-950 relative border border-neutral-800/50 flex-shrink-0">
-                    <img
-                      src={item.media[0].type === 'youtube' ? `https://img.youtube.com/vi/${item.media[0].url}/hqdefault.jpg` : item.media[0].url}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                )}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {items.map(item => (
+                <motion.div
+                  key={item.id}
+                  id={item.internalId}
+                  whileHover={{ y: -10 }}
+                  onClick={() => setSelected(item)}
+                  className="p-6 md:p-8 bg-neutral-900 border border-neutral-800 rounded-3xl cursor-pointer hover:bg-neutral-800 transition-colors flex flex-col group relative overflow-hidden"
+                >
+                  {/* Card Cover Image */}
+                  {item.media && item.media.length > 0 && (
+                    <div className="w-full h-48 mb-6 overflow-hidden rounded-2xl bg-neutral-950 relative border border-neutral-800/50 flex-shrink-0">
+                      <img
+                        src={item.media[0].type === 'youtube' ? `https://img.youtube.com/vi/${item.media[0].url}/hqdefault.jpg` : item.media[0].url}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
 
-                <h4 className="text-2xl font-bold mb-3 group-hover:text-white text-neutral-200 transition-colors tracking-tight">{item.title}</h4>
-                <p className="text-[#8BC24A] font-mono text-xs md:text-sm mb-2 md:mb-5">{item.role}</p>
-                <p className="text-neutral-400 mb-8 flex-grow">{item.brief}</p>
+                  <h4 className="text-2xl font-bold mb-3 group-hover:text-white text-neutral-200 transition-colors tracking-tight">{item.title}</h4>
+                  <p className="text-[#8BC24A] font-mono text-xs md:text-sm mb-2 md:mb-5">{item.role}</p>
+                  <p className="text-neutral-400 mb-8 flex-grow">{item.brief}</p>
 
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {item.tags.map(tag => (
-                    <span key={tag} className="text-xs bg-neutral-950 px-3 py-1 rounded-full text-neutral-500 font-mono">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                {item.links && item.links.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {item.links.map((link) => (
-                      <LinkTag key={link.label} link={link} stopPropagation />
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {item.tags.map(tag => (
+                      <span key={tag} className="text-xs bg-neutral-950 px-3 py-1 rounded-full text-neutral-500 font-mono">
+                        {tag}
+                      </span>
                     ))}
                   </div>
-                )}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
 
-    <AnimatePresence>
-      {selected && (
-        <ProjectModal selected={selected} onClose={() => setSelected(null)} />
-      )}
-    </AnimatePresence>
-  </div>
-);
+                  {item.links && item.links.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {item.links.map((link) => (
+                        <LinkTag key={link.label} link={link} stopPropagation />
+                      ))}
+                    </div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <AnimatePresence>
+        {selected && (
+          <ProjectModal selected={selected} onClose={() => setSelected(null)} />
+        )}
+      </AnimatePresence>
+    </div>
+  );
 }

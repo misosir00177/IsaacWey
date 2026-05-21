@@ -35,7 +35,8 @@ export default function Navbar() {
       <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest">
         <a href="#about" className="hover:text-neutral-400 transition-colors">About</a>
         <a href="#experience" className="hover:text-neutral-400 transition-colors">Experience</a>
-        <a href="#works" className="hover:text-neutral-400 transition-colors">Works</a>
+        <a href="#featured" className="hover:text-neutral-400 transition-colors">Featured</a>
+        <a href="#gallery" className="hover:text-neutral-400 transition-colors">Gallery</a>
         <a href="#contact" className="hover:text-neutral-400 transition-colors">Contact</a>
       </div>
     </nav>
