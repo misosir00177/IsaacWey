@@ -105,7 +105,7 @@ export default function FeaturedWorks() {
             tags: ["Javascript", "Firebase" , "Vibe Coding"],
             img: ColorPancakeCover.src,
             relatedLinks: [
-                { icon: YouTubeIcon, name: "Demo影片", hoverColor: "group-hover/btn:bg-red-500", url: "https://www.youtube.com/watch?v=7nqj8jYlXoE" },
+                { icon: YouTubeIcon, name: "Demo影片", hoverColor: "group-hover/btn:bg-red-500", url: "https://youtu.be/pRIBZ9_X0Ok" },
                 { icon: GitHubIcon, name: "Repository", hoverColor: "group-hover/btn:bg-white-500", url: "https://github.com/misosir00177/ColorPancakeMatSide" },
                 { icon: detailIcon, name: "Detail", btnColor: "bg-[#8BC24A]", textColor: "text-black", hoverColor: "group-hover/btn:bg-neutral-300", url: "#ColorPancake" }
             ]

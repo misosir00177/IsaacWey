@@ -9,15 +9,40 @@ import NotionIcon from "../../public/icon/brandIcon/notion.svg";
 import otherLinkIcon from "../../public/icon/brandIcon/external-link.svg";
 import detailIcon from "../../public/icon/brandIcon/dots.svg";
 import MobiusCover from "../../public/img/Mobius/Cover.png";
+import Mobius1 from "../../public/img/Mobius/1.png";
+import Mobius2 from "../../public/img/Mobius/2.png";
+import Mobius3 from "../../public/img/Mobius/3.png";
 import IxdHeroCover from "../../public/img/IxDHero/Cover.png";
+import IxdHero1 from "../../public/img/IxDHero/1.png";
+import IxdHero2 from "../../public/img/IxDHero/2.png";
+import IxdHero3 from "../../public/img/IxDHero/3.png";
+import IxdHeroAward from "../../public/img/IxDHero/Best-In-Show.png";
 import RevolverCover from "../../public/img/Revolver/Cover.png";
+import Revolver1 from "../../public/img/Revolver/1.png";
+import Revolver2 from "../../public/img/Revolver/2.png";
+import Revolver3 from "../../public/img/Revolver/3.png";
 import ColorPancakeCover from "../../public/img/ColorPancake/Cover.png";
+import ColorPancake1 from "../../public/img/ColorPancake/1.png";
 import DrKiwiCover from "../../public/img/DrKiwi/Cover.png";
+import DrKiwi1 from "../../public/img/DrKiwi/1.png";
 import MIDICover from "../../public/img/MIDI_Doc/Cover.png";
+import MIDI1 from "../../public/img/MIDI_Doc/1.png";
+import MIDI2 from "../../public/img/MIDI_Doc/2.png";
+import MIDI3 from "../../public/img/MIDI_Doc/3.png";
 import MatchaCover from "../../public/img/Matcha/Cover.png";
+import Matcha1 from "../../public/img/Matcha/1.png";
+import Matcha2 from "../../public/img/Matcha/2.png";
+import Matcha3 from "../../public/img/Matcha/3.png";
 import IxDHero2ndCover from "../../public/img/IxDHero2nd/Cover.png";
+import IxDHero2nd1 from "../../public/img/IxDHero2nd/1.png";
+import IxDHero2nd2 from "../../public/img/IxDHero2nd/2.png";
 import PeelusionCover from "../../public/img/PeeLusion/Cover.png";
+import Peelusion1 from "../../public/img/PeeLusion/1.png";
+import Peelusion2 from "../../public/img/PeeLusion/2.png";
 import CalculatedSmashCover from "../../public/img/CalculatedSmash/Cover.png";
+import CalculatedSmash1 from "../../public/img/CalculatedSmash/1.png";
+import CalculatedSmash2 from "../../public/img/CalculatedSmash/2.png";
+import CalculatedSmash3 from "../../public/img/CalculatedSmash/3.png";
 import postCover from "../../public/img/Video/Post_Cover.png";
 import AECover from "../../public/img/Video/AE_Cover.png";
 
@@ -122,7 +147,7 @@ function ProjectModal({ selected, onClose }: { selected: Project; onClose: () =>
     }, 5000);
 
     return () => clearInterval(timer);
-  }, [isYoutube, mediaList.length]);
+  }, [isYoutube, mediaList.length, currentIndex]);
 
   return (
     <motion.div
@@ -211,7 +236,7 @@ function ProjectModal({ selected, onClose }: { selected: Project; onClose: () =>
                       allowFullScreen
                     />
                   ) : currentMedia.url ? (
-                    <img src={currentMedia.url} alt={`media-${currentIndex}`} className="w-full h-full object-cover" />
+                    <img src={currentMedia.url} alt={`media-${currentIndex}`} className="w-full h-full object-contain" />
                   ) : (
                     <span>[ Project Media Placeholder ]</span>
                   )}
@@ -288,7 +313,11 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           在此專案中，由於毫米波等設備會有連線異常之問題，因此會需要動用備用方案來控制演出內容，此時會需要知道專案內關鍵功能的開關、數值的狀態，因此我學習到在除錯以及監控上須考量到效能最大化與資源占用最小化的平衡，而不能為了開發者方便而將監控功能過度冗餘。<br />
         </>,
-        media: [{ type: 'image', url: MobiusCover.src }],
+        media: [{ type: 'image', url: MobiusCover.src },
+        { type: 'image', url: Mobius1.src },
+        { type: 'image', url: Mobius2.src },
+        { type: 'image', url: Mobius3.src }
+        ],
         links: [
           createProjectLink('官方介紹', 'https://www.mobiusstriptheatre.com/2025241801229836229328823963665306201543977037325228631229924180242303506920316.html')
         ]
@@ -313,7 +342,11 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           在此專案中，由於專注於音樂與視覺效果流程，而疏忽了模組化設計，因而了解在一教學專案上模組化的重要性。<br />
         </>,
-        media: [{ type: 'image', url: MIDICover.src }, { type: 'youtube', url: 'SuCvxH1utAk' }],
+        media: [{ type: 'image', url: MIDICover.src },
+        { type: 'youtube', url: 'SuCvxH1utAk' },
+        { type: 'image', url: MIDI1.src },
+        { type: 'image', url: MIDI2.src },
+        { type: 'image', url: MIDI3.src }],
         links: [
           createProjectLink('Demo影片', 'https://youtu.be/SuCvxH1utAk'),
           createProjectLink('Repository', 'https://github.com/misosir00177/MIDI_Example_URP_Designant'),
@@ -344,7 +377,10 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           由於初次接觸前端開發，以HTML/CSS/JavaScript之基本技術為主要學習目標，並學習如何製作響應式(RWD)網頁。<br />
         </>,
-        media: [{ type: 'image', url: MatchaCover.src }],
+        media: [{ type: 'image', url: MatchaCover.src },
+        { type: 'image', url: Matcha1.src },
+        { type: 'image', url: Matcha2.src },
+        { type: 'image', url: Matcha3.src }],
         links: [
           createProjectLink('Demo網站', 'https://misosir00177.github.io/MatchaResponsiveWeb/index.html'),
           createProjectLink('Repository', 'https://github.com/misosir00177/MatchaResponsiveWeb')
@@ -380,7 +416,12 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           針對競爭性元素，使用者有高度參與，因此排行榜、快速進入遊玩等為加分要素。<br />
         </>,
-        media: [{ type: 'image', url: IxdHeroCover.src }],
+        media: [{ type: 'image', url: IxdHeroCover.src },
+          { type: 'image', url: IxdHeroAward.src },
+        {type : 'youtube', url: 'xe0fl6z8tOU'},
+        { type: 'image', url: IxdHero1.src },
+        { type: 'image', url: IxdHero2.src },
+        { type: 'image', url: IxdHero3.src }],
         links: [
           createProjectLink('Repository', 'https://github.com/misosir00177/IxDHero/tree/master'),
           createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=xe0fl6z8tOU')
@@ -413,7 +454,9 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           硬體上紅外線遮罩偵測會因環境因素影響，導致排錯困難。因此學習到紅外線閥值等相關知識與其他偵測方法。<br />
         </>,
-        media: [{ type: 'image', url: IxDHero2ndCover.src }],
+        media: [{ type: 'image', url: IxDHero2ndCover.src },
+        { type: 'image', url: IxDHero2nd1.src },
+        { type: 'image', url: IxDHero2nd2.src }],
       },
       {
         id: "h2", internalId: "Revolver",
@@ -421,7 +464,11 @@ export default function AllWorks() {
         brief: "實體槍枝配合Unity人臉捕捉技術之遊戲專案。以俄羅斯輪盤為基底玩法，配合「普通」、「中毒」、「回復」等多種子彈種類構成多種不同策略之雙人互動遊戲。",
         role: "Project Manager/Leader, Hardware Engineer",
         tags: ["Unity", "ESP32", "REST API", "Node.js", "IOT", "Bluetooth"],
-        media: [{ type: 'image', url: RevolverCover.src }],
+        media: [{ type: 'image', url: RevolverCover.src },
+        { type: 'image', url: Revolver1.src },
+        { type: 'image', url: Revolver2.src },
+        { type: 'image', url: Revolver3.src }
+        ],
         detail: <>
           以俄羅斯輪盤為發想基底，配合「普通」、「中毒」、「回復」等多元化的子彈，以及可選擇欲開槍之對象(自己或對方)，實現賭博、運氣、策略合而為一之雙人互動遊戲。<br />
           以實體硬體槍枝實現模擬旋轉左輪槍隻彈匣的俄羅斯輪盤玩法，配合臉部捕捉技術，使子彈特效會遺留在玩家身上。<br />
@@ -468,7 +515,10 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           Unity系統中控制REST API的訊號不穩定，導致有機會無法在體驗最高潮的點觸發相應效果，學習到應更加以注重連線品質與速度，因此開始學習Web Socket。<br />
         </>,
-        media: [{ type: 'image', url: PeelusionCover.src }],
+        media: [{ type: 'image', url: PeelusionCover.src },
+          { type: 'image', url: Peelusion1.src },
+          { type: 'image', url: Peelusion2.src }
+        ],
       },
       {
         id: "h4", internalId: "DrKiwi",
@@ -476,7 +526,10 @@ export default function AllWorks() {
         brief: "以Unity製作之混合實境(MR)遊戲，玩家化作水果攤老闆，透過不同手勢打擊各式各樣被感染的水果。",
         role: "Project Manager/Leader, MR Developer",
         tags: ["Unity", "C#", "MR"],
-        media: [{ type: 'image', url: DrKiwiCover.src }],
+        media: [{ type: 'image', url: DrKiwiCover.src },
+        { type: 'youtube', url: 'UoV-7OCeAl4' },
+        { type: 'image', url: DrKiwi1.src },
+        ],
         detail: <>
           以Unity製作之混合實境(MR)遊戲，玩家化作水果攤老闆，透過不同手勢打擊各式各樣被感染的水果。<br />
           <br />
@@ -506,7 +559,7 @@ export default function AllWorks() {
         title: "Color Pancake",
         brief: "以老人復健為主題配合斯特魯普效應，使用者透過畫面出題之文字顏色(而非背景顏色)踩對應位置發光地墊。",
         role: "Project Manager/Leader, Backend Developer",
-        tags: ["HTML", "CSS", "JavaScript", "Firebase", "Google AI Studio"],
+        tags: ["HTML", "CSS", "JavaScript", "Firebase", "Prompt Engineering", "IOT"],
         detail: <>
           以老人復健為主題，並從利用聯網地墊支互動做發想。<br />
           利用了斯特魯普效應(字義對字體顏色的干擾效應)來訓練腦力、肌力、反應力。<br />
@@ -524,9 +577,11 @@ export default function AllWorks() {
           利用斯特魯普效應配合地墊聯網而同時訓練反應力、腦力、肌力。<br />
           <br />
         </>,
-        media: [{ type: 'image', url: ColorPancakeCover.src }],
+        media: [{ type: 'image', url: ColorPancakeCover.src },
+          { type: 'image', url: ColorPancake1.src }
+        ],
         links: [
-          //createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=7nqj8jYlXoE'),
+          createProjectLink('Demo影片', 'https://youtu.be/pRIBZ9_X0Ok'),
           createProjectLink('Repository', 'https://github.com/misosir00177/ColorPancakeMatSide')
         ]
       },
@@ -545,7 +600,7 @@ export default function AllWorks() {
           專案規劃、Prompt Engineering、細節程式修改<br />
           <br />
           <span className="text-[#8BC24A]">使用方法/遊玩方法</span><br />
-          使用者會與CPU(電腦)為對手來進行與球對戰。<br />
+          使用者會與CPU(電腦)為對手來進行羽球對戰。<br />
           在球即將接近時會有著球點的提示，需要透過空白鍵或滑鼠點擊做出反應來打擊球。<br />
           若太快或太慢反應會進入「救球」，可以在限定時間內解出數學題目來反擊。<br />
           連續擊球達到指定次數可進入「殺球」，透過計算更複雜的題目而打出強力的一球來增加得分機率。<br />
@@ -553,8 +608,12 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">專案最大特點</span><br />
           利用熟悉的運動(羽球)規則配合虛擬中才能聯合的概念(心算)而同時訓練反應力與腦力。<br />
           <br />
-          </>,
-        media: [{ type: 'image', url: CalculatedSmashCover.src }],
+        </>,
+        media: [{ type: 'image', url: CalculatedSmashCover.src },
+          { type: 'image', url: CalculatedSmash1.src },
+          { type: 'image', url: CalculatedSmash2.src },
+          { type: 'image', url: CalculatedSmash3.src }
+        ],
         links: [
           createProjectLink('Demo體驗', 'https://ai.studio/apps/2fa97959-e525-4a42-af8d-d11b5ec71f3c')
         ]

@@ -89,7 +89,7 @@ export default function Hero() {
                 className="absolute inset-0 bg-neutral-800 flex items-center justify-center text-neutral-600 font-mono cursor-grab active:cursor-grabbing"
               >
                 {slides[currentIndex].image ? (
-                  <img src={slides[currentIndex].image} alt={`slides[currentIndex].text`} className="w-full h-full object-cover" />
+                  <img src={slides[currentIndex].image} alt={`slides[currentIndex].text`} className="w-full h-full object-contain" />
                 ) : (
                   <span>{slides[currentIndex].text}</span>
                 )}
