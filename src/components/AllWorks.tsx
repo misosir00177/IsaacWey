@@ -313,9 +313,9 @@ export default function AllWorks() {
           <span className="text-[#8BC24A]">學習機會</span><br />
           在此專案中，由於專注於音樂與視覺效果流程，而疏忽了模組化設計，因而了解在一教學專案上模組化的重要性。<br />
         </>,
-        media: [{ type: 'image', url: MIDICover.src }, { type: 'youtube', url: 'dQw4w9WgXcQ' }],
+        media: [{ type: 'image', url: MIDICover.src }, { type: 'youtube', url: 'SuCvxH1utAk' }],
         links: [
-          createProjectLink('Demo影片', 'https://www.youtube.com/watch?v=xe0fl6z8tOU'),
+          createProjectLink('Demo影片', 'https://youtu.be/SuCvxH1utAk'),
           createProjectLink('Repository', 'https://github.com/misosir00177/MIDI_Example_URP_Designant'),
           createProjectLink('教材文檔', 'https://www.notion.so/misosir00177/Unity-MIDI-Input-System-MINIS-Unity-MIDI-fb8a5004d5c6424e8b014da0e8be9c16?source=copy_link')
         ]
